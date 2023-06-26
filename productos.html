@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú con secciones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .section {
+      display: none;
+      margin: 20px;
+    }
+  </style>
+  <script>
+    function showSection(sectionId) {
+      // Ocultar todas las secciones
+      var sections = document.getElementsByClassName("section");
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = "none";
+      }
+
+      // Mostrar la sección seleccionada
+      var section = document.getElementById(sectionId);
+      section.style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <body bgcolor= #33FF90>
+    <center>
+    <header style="background-color: rgb(70, 209, 142);">
+       
+            
+        <h1 style="color: rgb(255, 255, 255); font-size: 500%; "> SECCIONES</h1>
+        <button onclick="location.href='index.html'" style="position: relative;  right: -580px; ">Volver atrás</button>
+    <nav>
+      <ul>
+        <li><a href="#comida" onclick="showSection('comida')">Comida</a></li>
+        <li><a href="#ropa" onclick="showSection('ropa')">Ropa</a></li>
+        <li><a href="#utiles" onclick="showSection('utiles')">Útiles</a></li>
+        <li><a href="#accesorios" onclick="showSection('accesorios')">Accesorios</a></li>
+        <li><a href="#chacharas" onclick="showSection('chacharas')">Chacharas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <style>
+    .containef {
+      display: flex;
+      position: relative;
+      top: 30px;
+      left: 120px;
+      
+    }
+    
+    .elementf {
+      margin-right: 40px;
+      cursor: pointer;
+    }
+    
+    .informacion {
+      display: none;
+    }
+    
+    .elementf.active .informacion {
+      display: block;
+    }
+  
+    img {
+      width: 200px;
+      height: 200px;
+      }
+  
+    
+    </style>
+  <div id="comida" class="section">
+    <h2>Sección de Comida</h2>
+    <p><div class="containef">
+      <div class="elementf">
+        <img src="imagenes/img7.jpg" alt="Imagen">
+        <p>Bebida</p>
+        <div class="informacion">
+          <p>Coca Cola de vidrio <br>
+            Disponibles: 7 <br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementf">
+        <img src="imagenes/img2.jpg" alt="Imagen">
+        <p>Comida</p>
+        <div class="informacion">
+          <p>Hamburguesa casera <br>
+          Disponibles: las que se soliciten<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementf">
+        <img src="imagenes/img8.jpg" alt="Imagen">
+        <p>Comida</p>
+        <div class="informacion">
+          <p>Pizza casera <br>
+          Disponibles: las rebanadas que se soliciten<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+
+    <div class="elementf">
+      <img src="imagenes/img9.jpg" alt="Imagen">
+      <p>Comida</p>
+      <div class="informacion">
+        <p>Maruchan preparada<br>
+        Disponibles: 6<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    <script>
+    var elementos = document.getElementsByClassName("elementf");
+    
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+  
+    <style>
+      .containerof {
+        display: flex;
+        position: relative;
+        top: 60px;
+        left: 120px;
+        
+      }
+      
+      .elementosf {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementosf.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containerof">
+      <div class="elementosf">
+        <img src="imagenes/img10" alt="Imagen">
+        <p>Bebida</p>
+        <div class="informacion">
+          <p>Bebida energetizante  <br>
+            Disponibles: 3<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementosf">
+        <img src="imagenes/img11.jpg" alt="Imagen">
+        <p>Bebida</p>
+        <div class="informacion">
+          <p>Sprite en lata<br>
+          Disponibles: 8<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementosf">
+        <img src="imagenes/img12.jpg" alt="Imagen">
+        <p>Comida</p>
+        <div class="informacion">
+          <p>Rebanada de flan casero<br>
+          Disponibles: 6<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementosf">
+      <img src="imagenes/img13.jpg" alt="Imagen">
+      <p>Bebida</p>
+      <div class="informacion">
+        <p>Fanta en lata <br>
+        Disponibles: 7<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementosf");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+    <style>
+      .containeroof {
+        display: flex;
+        position: relative;
+        top: 100px;
+        left: 120px;
+        
+      }
+      
+      .elementossf {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementossf.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containeroof">
+      <div class="elementossf">
+        <img src="imagenes/img14.jpg" alt="Imagen">
+        <p>Comida</p>
+        <div class="informacion">
+          <p>Rebanada de pay de limón <br>
+            Disponibles: 10<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementossf">
+        <img src="imagenes/img15" alt="Imagen">
+        <p>Comida</p>
+        <div class="informacion">
+          <p>Sandwich preparado<br>
+          Disponibles: los que se soliciten<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementossf">
+        <img src="imagenes/img16.jpg" alt="Imagen">
+        <p>Comida</p>
+        <div class="informacion">
+          <p>Orden de papas a la francesa<br>
+          Disponibles: 4<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementossf">
+      <img src="imagenes/img17.jpg" alt="Imagen">
+      <p>Comida</p>
+      <div class="informacion">
+        <p>fruta picada en vaso <br>
+        Disponibles: 5<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementossf");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script></p>
+  </div>
+
+
+
+
+
+
+
+
+  <style>
+    .container {
+      display: flex;
+      position: relative;
+      top: 30px;
+      left: 120px;
+      
+    }
+    
+    .elemento {
+      margin-right: 40px;
+      cursor: pointer;
+    }
+    
+    .informacion {
+      display: none;
+    }
+    
+    .elemento.active .informacion {
+      display: block;
+    }
+  
+    img {
+      width: 200px;
+      height: 200px;
+      }
+  
+    
+    </style>
+
+
+  <div id="ropa" class="section">
+    <h2>Sección de Ropa</h2>
+    <p><div class="container">
+      <div class="elemento">
+        <img src="imagenes/img1.jpg" alt="Imagen">
+        <p>Ropa</p>
+        <div class="informacion">
+          <p>Sudadera<br>
+            Disponibles: 2 <br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elemento">
+        <img src="imagenes/img18.jpg" alt="Imagen">
+        <p>Ropa</p>
+        <div class="informacion">
+          <p>Sudadera <br>
+          Disponibles: 1<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elemento">
+        <img src="imagenes/img19.jpg" alt="Imagen">
+        <p>Ropa</p>
+        <div class="informacion">
+          <p>Sudadera <br>
+          Disponibles: 2<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+
+    <div class="elemento">
+      <img src="imagenes/img20" alt="Imagen">
+      <p>Ropa</p>
+      <div class="informacion">
+        <p>Sudadera<br>
+        Disponibles: 3<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  
+    <script>
+    var elementos = document.getElementsByClassName("elemento");
+    
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+  
+    <style>
+      .containerr {
+        display: flex;
+        position: relative;
+        top: 60px;
+        left: 120px;
+        
+      }
+      
+      .elementoo {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementoo.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containerr">
+      <div class="elementoo">
+        <img src="imagenes/img21.jpg" alt="Imagen">
+        <p>Ropa</p>
+        <div class="informacion">
+          <p>pantalon <br>
+            Disponibles: 1<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementoo">
+        <img src="imagenes/img22.jpg" alt="Imagen">
+        <p>Ropa</p>
+        <div class="informacion">
+          <p>pantalon<br>
+          Disponibles: 2<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementoo">
+        <img src="imagenes/img23.jpg" alt="Imagen">
+        <p>Ropa</p>
+        <div class="informacion">
+          <p>pantalon<br>
+          Disponibles: 1<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementoo">
+      <img src="imagenes/img24.jpg" alt="Imagen">
+      <p>Ropa</p>
+      <div class="informacion">
+        <p>pantalon<br>
+        Disponibles: 2<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementoo");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+    <style>
+      .containerrr {
+        display: flex;
+        position: relative;
+        top: 100px;
+        left: 120px;
+        
+      }
+      
+      .elementooo {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementooo.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containerrr">
+      <div class="elementooo">
+        <img src="imagenes/img25.jpg" alt="Imagen">
+        <p>Ropa</p>
+        <div class="informacion">
+          <p>top <br>
+            Disponibles: 1<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementooo">
+        <img src="imagenes/img26.jpg" alt="Imagen">
+        <p>Ropa</p>
+        <div class="informacion">
+          <p>top<br>
+          Disponibles: 1<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementooo">
+        <img src="imagenes/img27.jpg" alt="Imagen">
+        <p>Ropa</p>
+        <div class="informacion">
+          <p>top<br>
+          Disponibles: 2<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementooo">
+      <img src="imagenes/img28.jpg" alt="Imagen">
+      <p>Ropa</p>
+      <div class="informacion">
+        <p>top<br>
+        Disponibles: 2<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementooo");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script></p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .containe {
+      display: flex;
+      position: relative;
+      top: 30px;
+      left: 120px;
+      
+    }
+    
+    .element {
+      margin-right: 40px;
+      cursor: pointer;
+    }
+    
+    .informacion {
+      display: none;
+    }
+    
+    .element.active .informacion {
+      display: block;
+    }
+  
+    img {
+      width: 200px;
+      height: 200px;
+      }
+  
+    
+    </style>
+ 
+  <div id="utiles" class="section">
+    <h2>Sección de Útiles</h2>
+    <p><div class="containe">
+      <div class="element">
+        <img src="imagenes/img29.jpg" alt="Imagen">
+        <p>Útiles</p>
+        <div class="informacion">
+          <p>Plumones<br>
+            Disponibles: 7 <br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="element">
+        <img src="imagenes/img30.jpg" alt="Imagen">
+        <p>Útiles</p>
+        <div class="informacion">
+          <p>Plumones <br>
+          Disponibles: 3<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="element">
+        <img src="imagenes/img31.jpg" alt="Imagen">
+        <p>Útiles</p>
+        <div class="informacion">
+          <p>Plumones <br>
+          Disponibles: 4<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+
+    <div class="element">
+      <img src="imagenes/img32.jpg" alt="Imagen">
+      <p>Útiles</p>
+      <div class="informacion">
+        <p>Plumones<br>
+        Disponibles: 6<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    <script>
+    var elementos = document.getElementsByClassName("element");
+    
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+  
+    <style>
+      .containero {
+        display: flex;
+        position: relative;
+        top: 60px;
+        left: 120px;
+        
+      }
+      
+      .elementos {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementos.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containero">
+      <div class="elementos">
+        <img src="imagenes/img33.jpg" alt="Imagen">
+        <p>Útiles</p>
+        <div class="informacion">
+          <p>Mochila <br>
+            Disponibles: 3<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementos">
+        <img src="imagenes/img34.jpg" alt="Imagen">
+        <p>Útiles</p>
+        <div class="informacion">
+          <p>Mochila<br>
+          Disponibles: 8<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementos">
+        <img src="imagenes/img35.jpg" alt="Imagen">
+        <p>Útiles</p>
+        <div class="informacion">
+          <p>Mochila<br>
+          Disponibles: 6<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementos">
+      <img src="imagenes/img36.jpg" alt="Imagen">
+      <p>Útiles</p>
+      <div class="informacion">
+        <p>Mochila <br>
+        Disponibles: 7<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementos");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+    <style>
+      .containeroo {
+        display: flex;
+        position: relative;
+        top: 100px;
+        left: 120px;
+        
+      }
+      
+      .elementoss {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementoss.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containeroo">
+      <div class="elementoss">
+        <img src="imagenes/img37.jpg" alt="Imagen">
+        <p>Útiles</p>
+        <div class="informacion">
+          <p>libreta <br>
+            Disponibles: 10<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementoss">
+        <img src="imagenes/img38" alt="Imagen">
+        <p>Útiles</p>
+        <div class="informacion">
+          <p>lapicera<br>
+          Disponibles: 4<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementoss">
+        <img src="imagenes/img39" alt="Imagen">
+        <p>Útiles</p>
+        <div class="informacion">
+          <p>calculadora cientifica<br>
+          Disponibles: 4<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementoss">
+      <img src="imagenes/img40" alt="Imagen">
+      <p>Útiles</p>
+      <div class="informacion">
+        <p>regla <br>
+        Disponibles: 5<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementoss");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script></p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  .containefa {
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 120px;
+    
+  }
+  
+  .elementfa {
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  .informacion {
+    display: none;
+  }
+  
+  .elementfa.active .informacion {
+    display: block;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    }
+
+  
+  </style>
+
+  <div id="accesorios" class="section">
+    <h2>Sección de Accesorios</h2>
+    <p><div class="containefa">
+      <div class="elementfa">
+        <img src="imagenes/img41.jpg" alt="Imagen">
+        <p>Accesorios</p>
+        <div class="informacion">
+          <p>Collar<br>
+            Disponibles: 7 <br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementfa">
+        <img src="imagenes/img42.jpg" alt="Imagen">
+        <p>Accesorios</p>
+        <div class="informacion">
+          <p>Collar <br>
+          Disponibles: 4<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementfa">
+        <img src="imagenes/img43" alt="Imagen">
+        <p>Accesorios</p>
+        <div class="informacion">
+          <p>Collar<br>
+          Disponibles: 4<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+
+    <div class="elementfa">
+      <img src="imagenes/img44.jpg" alt="Imagen">
+      <p>Accesorios</p>
+      <div class="informacion">
+        <p>Collar<br>
+        Disponibles: 6<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    <script>
+    var elementos = document.getElementsByClassName("elementfa");
+    
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+  
+    <style>
+      .containerofa {
+        display: flex;
+        position: relative;
+        top: 60px;
+        left: 120px;
+        
+      }
+      
+      .elementosfa {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementosfa.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containerofa">
+      <div class="elementosfa">
+        <img src="imagenes/img45.jpg" alt="Imagen">
+        <p>Accesorios</p>
+        <div class="informacion">
+          <p>pulsera  <br>
+            Disponibles: 3<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementosfa">
+        <img src="imagenes/img46.jpg" alt="Imagen">
+        <p>Accesorios</p>
+        <div class="informacion">
+          <p>pulsera<br>
+          Disponibles: 5<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementosfa">
+        <img src="imagenes/img47.jpg" alt="Imagen">
+        <p>Accesorios</p>
+        <div class="informacion">
+          <p>pulsera<br>
+          Disponibles: 6<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementosfa">
+      <img src="imagenes/img48.jpg" alt="Imagen">
+      <p>Accesorios</p>
+      <div class="informacion">
+        <p>pulsera<br>
+        Disponibles: 3<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementosfa");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+    <style>
+      .containeroofa {
+        display: flex;
+        position: relative;
+        top: 100px;
+        left: 120px;
+        
+      }
+      
+      .elementossfa {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementossfa.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containeroofa">
+      <div class="elementossfa">
+        <img src="imagenes/img49.jpg" alt="Imagen">
+        <p>Accesorios</p>
+        <div class="informacion">
+          <p>Aretes <br>
+            Disponibles: 3<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementossfa">
+        <img src="imagenes/img50.jpg" alt="Imagen">
+        <p>Accesorios</p>
+        <div class="informacion">
+          <p>Aretes<br>
+          Disponibles: 4<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementossfa">
+        <img src="imagenes/img51.jpg" alt="Imagen">
+        <p>Accesorios</p>
+        <div class="informacion">
+          <p>Aretes<br>
+          Disponibles: 2<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementossfa">
+      <img src="imagenes/img52.jpg" alt="Imagen">
+      <p>Accesorios</p>
+      <div class="informacion">
+        <p>Aretes<br>
+        Disponibles: 5<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementossfa");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script></p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .containefan {
+      display: flex;
+      position: relative;
+      top: 30px;
+      left: 120px;
+      
+    }
+    
+    .elementfan {
+      margin-right: 40px;
+      cursor: pointer;
+    }
+    
+    .informacion {
+      display: none;
+    }
+    
+    .elementfan.active .informacion {
+      display: block;
+    }
+  
+    img {
+      width: 200px;
+      height: 200px;
+      }
+  
+    
+    </style>
+
+  <div id="chacharas" class="section">
+    <h2>Sección de Chacharas</h2>
+    <p><div class="containefan">
+      <div class="elementfan">
+        <img src="imagenes/img53.jpg" alt="Imagen">
+        <p>Chacharas</p>
+        <div class="informacion">
+          <p>peluches <br>
+            Disponibles: 2 <br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementfan">
+        <img src="imagenes/img54.jpg" alt="Imagen">
+        <p>Chacharas</p>
+        <div class="informacion">
+          <p>peluches <br>
+          Disponibles: 1<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementfan">
+        <img src="imagenes/img55" alt="Imagen">
+        <p>Chacharas</p>
+        <div class="informacion">
+          <p>cubos rubik<br>
+          Disponibles: 6<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+
+    <div class="elementfan">
+      <img src="imagenes/img56.jpg" alt="Imagen">
+      <p>Chacharas</p>
+      <div class="informacion">
+        <p>cubos rubik<br>
+        Disponibles: 6<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    <script>
+    var elementos = document.getElementsByClassName("elementfan");
+    
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+  
+    <style>
+      .containerofan {
+        display: flex;
+        position: relative;
+        top: 60px;
+        left: 120px;
+        
+      }
+      
+      .elementosfan {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementosfan.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containerofan">
+      <div class="elementosfan">
+        <img src="imagenes/img57.jpg" alt="Imagen">
+        <p>Chacharas</p>
+        <div class="informacion">
+          <p>audifonos  <br>
+            Disponibles: 3<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementosfan">
+        <img src="imagenes/img58.jpg" alt="Imagen">
+        <p>Chacharas</p>
+        <div class="informacion">
+          <p>audifonos<br>
+          Disponibles: 8<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementosfan">
+        <img src="imagenes/img59" alt="Imagen">
+        <p>Chacharas</p>
+        <div class="informacion">
+          <p>botellas de agua<br>
+          Disponibles: 6<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementosfan">
+      <img src="imagenes/img60.jpg" alt="Imagen">
+      <p>Chacharas</p>
+      <div class="informacion">
+        <p>botellas de agua<br>
+        Disponibles: 7<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementosfan");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script>
+    
+  
+    <style>
+      .containeroofan {
+        display: flex;
+        position: relative;
+        top: 100px;
+        left: 120px;
+        
+      }
+      
+      .elementossfan {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      
+      .informacion {
+        display: none;
+      }
+      
+      .elementossfan.active .informacion {
+        display: block;
+      }
+    
+      img {
+        width: 200px;
+        height: 200px;
+        }
+        </style>
+    <div class="containeroofan">
+      <div class="elementossfan">
+        <img src="imagenes/img61.jpg" alt="Imagen">
+        <p>Chacharas</p>
+        <div class="informacion">
+          <p>botellas de agua<br>
+            Disponibles: 10<br>
+            <button>
+              <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+      
+      <div class="elementossfan">
+        <img src="imagenes/img62" alt="Imagen">
+        <p>Chacharas</p>
+        <div class="informacion">
+          <p>botellas de agua<br>
+          Disponibles: los que se soliciten<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+    
+      <div class="elementossfan">
+        <img src="imagenes/img63.jpg" alt="Imagen">
+        <p>Chacharas</p>
+        <div class="informacion">
+          <p>loncheras<br>
+          Disponibles: 4<br>
+          <button>
+            <a href="infventa.html">Comprar</a> </button></p>
+        </div>
+      </div>
+  
+    <div class="elementossfan">
+      <img src="imagenes/img64" alt="Imagen">
+      <p>Chacharas</p>
+      <div class="informacion">
+        <p>loncheras <br>
+        Disponibles: 5<br>
+        <button>
+          <a href="infventa.html">Comprar</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+    <script>
+    var elemento = document.getElementsByClassName("elementossfan");
+    
+    for (var i = 0; i < elemento.length; i++) {
+      elemento[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    }
+    </script></p>
+  </div>
+
+  
+</body>
+</html>
